@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="Shopora - Modern online shopping website">
+
+    <title>Shopora - Modern E-Commerce</title>
+
+    <!-- CSS File -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+
+        <div class="container">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">Shopora</a>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="search-box">
+                <input type="search" id="searchInput" placeholder="Search products...">
+
+                <button id="searchBtn">
+                Search
+                </button>
+            </div>
+
+            <!-- Header Actions -->
+            <div class="header-actions">
+
+                <a href="login">
+                    Login
+                </a>
+
+                <a href="wishlist">
+                    ❤️ Wishlist
+                </a>
+
+                <a href="cart">
+                    🛒 Cart
+                    <span id="cartCount">0</span>
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="navbar">
+
+        <div class="container">
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index">Home</a>
+                </li>
+
+                <li>
+                    <a href="products">
+                        All Products
+                    </a>
+                </li>
+
+                <li>
+                    <a href="Electronics">
+                        Electronics
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html?category=fashion">
+                        Fashion
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html?category=beauty">
+                        Beauty
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html?category=home">
+                        Home & Living
+                    </a>
+                </li>
+
+                <li>
+                    <a href="products.html?category=shoes">
+                        Shoes
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main>
+
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section class="hero">
+
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <p class="hero-subtitle">
+                        NEW COLLECTION
+                    </p>
+
+                    <h1>
+                        Upgrade Your Lifestyle
+                    </h1>
+
+                    <p>
+                        Discover premium products at amazing prices.
+                    </p>
+
+                    <a href="products.html" class="btn">
+                    Shop Now
+                    </a>
+
+                </div>
+
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&auto=format&fit=crop&q=80" alt="Shopara new collection">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <h2>
+                        Shop By Category
+                    </h2>
+
+                    <p>
+                        Explore our popular categories
+                    </p>
+
+                </div>
+
+
+                <div class="category-grid">
+
+                    <a href="Electronics" class="category-card">
+
+                        <img src="electronics.avif" alt="Electronics">
+
+                        <h3>
+                            Electronics
+                        </h3>
+
+                    </a>
+
+
+                    <a href="products.html?category=fashion" class="category-card">
+
+                        <img src="Fashions.avif" alt="Fashion">
+
+                        <h3>
+                            Fashion
+                        </h3>
+
+                    </a>
+
+
+                    <a href="products.html?category=beauty" class="category-card">
+
+                        <img src="beauty.avif" alt="Beauty">
+
+                        <h3>
+                            Beauty
+                        </h3>
+
+                    </a>
+
+
+                    <a href="products.html?category=home"class="category-card">
+
+                        <img src="home.avif" alt="Home and Living">
+
+                        <h3>
+                            Home & Living
+                        </h3>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section> 
+
+
+        <!-- ================= FEATURED PRODUCTS ================= -->
+
+        <section class="products-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <h2>
+                        Featured Products
+                    </h2>
+
+                    <p>
+                        Our most popular products
+                    </p>
+
+                </div>
+
+
+                <div class="product-grid" id="featuredProducts">
+
+                    <!-- Product 1 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="badge">
+                                SALE
+                            </span>
+
+                            <img src="headphone.avif"alt="Wireless Headphones">
+
+                            <button class="wishlist-btn"data-product-id="1">
+                            ❤️
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Electronics
+                            </p>
+
+                            <h3>
+                                Wireless Headphones
+                            </h3>
+
+                            <div class="rating">
+                                ⭐⭐⭐⭐⭐
+                                <span>
+                                    (125)
+                                </span>
+                            </div>
+
+                            <div class="price">
+
+                                <span class="current-price">
+                                    ₹1,999
+                                </span>
+
+                                <span class="old-price">
+                                    ₹2,999
+                                </span>
+
+                            </div>
+
+                            <button class="add-cart-btn"data-product-id="1">
+                            Add to Cart
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 2 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="badge">
+                                NEW
+                            </span>
+
+                            <img src="Watch.avif"alt="Smart Watch">
+
+                            <button class="wishlist-btn"data-product-id="2">
+                            ❤️
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Electronics
+                            </p>
+
+                            <h3>
+                                Smart Watch
+                            </h3>
+
+                            <div class="rating">
+                                ⭐⭐⭐⭐☆
+                                <span>
+                                    (89)
+                                </span>
+                            </div>
+
+                            <div class="price">
+
+                                <span class="current-price">
+                                    ₹2,499
+                                </span>
+
+                                <span class="old-price">
+                                    ₹3,499
+                                </span>
+
+                            </div>
+
+                            <button class="add-cart-btn"data-product-id="2">
+                            Add to Cart
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 3 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <img src="shoes.avif"alt="Running Shoes">
+
+                            <button class="wishlist-btn"data-product-id="3">
+                            ❤️
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Shoes
+                            </p>
+
+                            <h3>
+                                Premium Running Shoes
+                            </h3>
+
+                            <div class="rating">
+                                ⭐⭐⭐⭐⭐
+                                <span>
+                                    (210)
+                                </span>
+                            </div>
+
+                            <div class="price">
+
+                                <span class="current-price">
+                                    ₹1,799
+                                </span>
+
+                                <span class="old-price">
+                                    ₹2,499
+                                </span>
+
+                            </div>
+
+                            <button class="add-cart-btn"data-product-id="3">
+                            Add to Cart
+                            </button>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 4 -->
+
+                    <article class="product-card">
+
+                        <div class="product-image">
+
+                            <span class="badge">
+                                -30%
+                            </span>
+
+                            <img src="backpack.avif"alt="Backpack">
+
+                            <button class="wishlist-btn"data-product-id="4">
+                            ❤️
+                            </button>
+
+                        </div>
+
+
+                        <div class="product-info">
+
+                            <p class="product-category">
+                                Fashion
+                            </p>
+
+                            <h3>
+                                Premium Backpack
+                            </h3>
+
+                            <div class="rating">
+                                ⭐⭐⭐⭐☆
+                                <span>
+                                    (76)
+                                </span>
+                            </div>
+
+                            <div class="price">
+
+                                <span class="current-price">
+                                    ₹999
+                                </span>
+
+                                <span class="old-price">
+                                    ₹1,499
+                                </span>
+
+                            </div>
+
+                            <button class="add-cart-btn"data-product-id="4">
+                            Add to Cart
+                            </button>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <div class="view-all">
+
+                    <a href="products.html"class="btn secondary-btn">
+                    View All Products
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= OFFER BANNER ================= -->
+
+        <section class="offer-section">
+
+            <div class="container">
+
+                <div class="offer-content">
+
+                    <p>
+                        LIMITED TIME OFFER
+                    </p>
+
+                    <h2>
+                        Get Up To 50% OFF
+                    </h2>
+
+                    <p>
+                        Grab your favourite products before the
+                        offer ends.
+                    </p>
+
+                    <a
+                        href="products.html"
+                        class="btn"
+                    >
+                        Shop Deals
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= TRENDING PRODUCTS ================= -->
+
+        <section class="products-section">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <h2>
+                        Trending Products
+                    </h2>
+
+                    <p>
+                        What everyone is buying right now
+                    </p>
+
+                </div>
+
+
+                <div
+                    class="product-grid"
+                    id="trendingProducts"
+                >
+
+                    <!-- JavaScript can load products here -->
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= WHY SHOP WITH US ================= -->
+
+        <section class="features">
+
+            <div class="container">
+
+                <div class="feature-grid">
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            🚚
+                        </div>
+
+                        <h3>
+                            Fast Delivery
+                        </h3>
+
+                        <p>
+                            Fast and reliable delivery
+                            across India.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            🔒
+                        </div>
+
+                        <h3>
+                            Secure Payment
+                        </h3>
+
+                        <p>
+                            Your payments are safe
+                            and secure.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            ↩️
+                        </div>
+
+                        <h3>
+                            Easy Returns
+                        </h3>
+
+                        <p>
+                            Easy and hassle-free returns.
+                        </p>
+
+                    </div>
+
+
+                    <div class="feature-card">
+
+                        <div class="feature-icon">
+                            🎧
+                        </div>
+
+                        <h3>
+                            24/7 Support
+                        </h3>
+
+                        <p>
+                            Our support team is always
+                            ready to help.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CUSTOMER REVIEWS ================= -->
+
+        <section class="reviews">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <h2>
+                        What Our Customers Say
+                    </h2>
+
+                </div>
+
+
+                <div class="review-grid">
+
+                    <article class="review-card">
+
+                        <div class="review-rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+
+                        <p>
+                            "Amazing shopping experience.
+                            The website is simple and easy
+                            to use."
+                        </p>
+
+                        <h4>
+                            Rahul
+                        </h4>
+
+                        <span>
+                            Verified Customer
+                        </span>
+
+                    </article>
+
+
+                    <article class="review-card">
+
+                        <div class="review-rating">
+                            ⭐⭐⭐⭐⭐
+                        </div>
+
+                        <p>
+                            "Good quality products and
+                            very fast delivery."
+                        </p>
+
+                        <h4>
+                            Aman
+                        </h4>
+
+                        <span>
+                            Verified Customer
+                        </span>
+
+                    </article>
+
+
+                    <article class="review-card">
+
+                        <div class="review-rating">
+                            ⭐⭐⭐⭐☆
+                        </div>
+
+                        <p>
+                            "The product quality is great
+                            and prices are affordable."
+                        </p>
+
+                        <h4>
+                            Priya
+                        </h4>
+
+                        <span>
+                            Verified Customer
+                        </span>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= NEWSLETTER ================= -->
+
+        <section class="newsletter">
+
+            <div class="container">
+
+                <div class="newsletter-content">
+
+                    <h2>
+                        Subscribe to Our Newsletter
+                    </h2>
+
+                    <p>
+                        Get updates about new products,
+                        offers and discounts.
+                    </p>
+
+                    <form id="newsletterForm">
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                        <button type="submit">
+                            Subscribe
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <!-- About -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Shopora
+                    </h3>
+
+                    <p>
+                        Your modern destination for
+                        quality products at great prices.
+                    </p>
+
+                </div>
+
+
+                <!-- Quick Links -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Quick Links
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="products.html">
+                                Products
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="wishlist.html">
+                                Wishlist
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="cart.html">
+                                Cart
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Customer Service -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Customer Service
+                    </h3>
+
+                    <ul>
+
+                        <li>
+                            <a href="#">
+                                Contact Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Shipping Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Return Policy
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                Privacy Policy
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Social -->
+
+                <div class="footer-column">
+
+                    <h3>
+                        Follow Us
+                    </h3>
+
+                    <div class="social-links">
+
+                        <a href="#">
+                            Instagram
+                        </a>
+
+                        <a href="#">
+                            Facebook
+                        </a>
+
+                        <a href="#">
+                            LinkedIn
+                        </a>
+
+                        <a href="#">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Shopora. All Rights Reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
